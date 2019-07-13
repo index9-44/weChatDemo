@@ -1,0 +1,82 @@
+<view class="container">
+
+  <view class="top">
+    <text>请输入患者信息</text>
+  </view>
+
+  <form bindsubmit="submitform">
+    <view class="sectionName">
+      <text class="textMeth">姓名</text>
+      <input class="inputMeth"  name="inputName" placeholder="请输入姓名" value='{{inputValue}}'></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">年龄</text>
+      <input class="inputMeth" name="inputAge" placeholder="请输入年龄"></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">症状</text>
+      <input class="inputMeth" name="inputSymptom" placeholder="请输入大致症状"></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">年限</text>
+      <input class="inputMeth" name="inputTime" placeholder="请输入年限"></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">数量</text>
+      <input class="inputMeth"  name="inputNumber" placeholder="请输入购买的数量"></input>
+    </view>
+
+     <view class="sectionButton">
+    <!-- tips:如果使用type标签，会使hover—class效果失效 -->
+    <button class="refresh"  bindtap='clearInputEvent' hover-class="refresh-active" form-type="reset">清空</button>
+    <button class="refresh" bindtap="btn" hover-class="submit-active" form-type="submit">提交</button>
+  </view>
+
+
+
+
+  </form>
+
+
+
+
+
+
+
+
+  <!-- <view class="sectionName">
+    <text class="textMeth">姓名</text>
+    <input class="inputMeth" bindinput="getName" placeholder="请输入姓名"></input>
+  </view>
+
+  <view class="sectionName">
+    <text class="textMeth">年龄</text>
+    <input class="inputMeth" placeholder="请输入年龄"></input>
+  </view>
+
+  <view class="sectionName">
+    <text class="textMeth">症状</text>
+    <input class="inputMeth" placeholder="请输入大致症状"></input>
+  </view>
+
+  <view class="sectionName">
+    <text class="textMeth">年限</text>
+    <input class="inputMeth" placeholder="请输入年限"></input>
+  </view>
+
+  <view class="sectionName">
+    <text class="textMeth">数量</text>
+    <input class="inputMeth" placeholder="请输入购买的数量"></input>
+  </view> -->
+
+  <!-- <view class="sectionButton"> -->
+    <!-- tips:如果使用type标签，会使hover—class效果失效 -->
+    <!-- <button class="refresh" hover-class="refresh-active" form-type="reset">清空</button>
+    <button class="refresh" bindtap="btn" hover-class="submit-active" form-type="submit">提交</button>
+  </view> -->
+
+</view>

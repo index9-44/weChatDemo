@@ -1,0 +1,21 @@
+<view class="root">
+<navigator url="../find/find">
+    <view class="top">
+      <view class="inputtMeth">
+        <input class="inputMeth" placeholder="搜索用户" id="inputName" name="inputName"></input>
+      </view>
+    </view>
+</navigator>
+  <view class="content">
+      <view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
+        <navigator url="../user/user?_id={{item._id}}">
+          <text class="textMeth1">姓名：</text>
+          <text class="textMeth2">{{item.name}}</text>
+          <text class="textMeth1">已购买:</text>
+          <text class="textMeth2">{{item.number}}盒\n</text>
+          <text class="textMeth1">症状：</text>
+          <text class="textMeth2">{{item.symptom}}</text>
+        </navigator>
+      </view>
+  </view>
+</view>

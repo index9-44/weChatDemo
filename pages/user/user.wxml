@@ -1,0 +1,17 @@
+<view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
+  <text class="textMeth1">姓名：</text>
+  <text class="textMeth2">{{item.name}}\n</text>
+  <text class="textMeth1">已购买:</text>
+  <text class="textMeth2">{{item.number}}盒\n</text>
+  <text class="textMeth1">症状：</text>
+  <text class="textMeth2">{{item.symptom}}\n</text>
+  <text class="textMeth1">年龄：</text>
+  <text class="textMeth2">{{item.age}}\n</text>
+  <text class="textMeth1">发病时长：</text>
+  <text class="textMeth2">{{item.time}}\n</text>
+</view>
+
+<view class="buttonPart">
+  <button bindtap="delPart">注销账户</button>
+  <button>修改账户</button>
+</view>

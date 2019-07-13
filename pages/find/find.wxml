@@ -1,0 +1,28 @@
+<view class="root">
+
+  <form class="form1" bindsubmit="btnSbmit">
+    <view class="top">
+      <view class="inputtMeth">
+        <input class="inputMeth" placeholder="请输入查找用户姓名" id="inputName" name="inputName"></input>
+      </view>
+      <view class="buttonMeth">
+        <button class="BT" form-type="submit">查询</button>
+      </view>
+    </view>
+  </form>
+  <view class="content">
+
+      <view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
+        <navigator url="../user/user?_id={{item._id}}">
+          <text class="textMeth1">姓名：</text>
+          <text class="textMeth2">{{item.name}}</text>
+          <text class="textMeth1">已购买:</text>
+          <text class="textMeth2">{{item.number}}盒\n</text>
+          <text class="textMeth1">症状：</text>
+          <text class="textMeth2">{{item.symptom}}</text>
+        </navigator>
+      </view>
+
+  </view>
+
+</view>

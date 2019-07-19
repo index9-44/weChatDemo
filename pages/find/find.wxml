@@ -11,18 +11,16 @@
     </view>
   </form>
   <view class="content">
-
-      <view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
-        <navigator url="../user/user?_id={{item._id}}">
-          <text class="textMeth1">姓名：</text>
-          <text class="textMeth2">{{item.name}}</text>
-          <text class="textMeth1">已购买:</text>
-          <text class="textMeth2">{{item.number}}盒\n</text>
-          <text class="textMeth1">症状：</text>
-          <text class="textMeth2">{{item.symptom}}</text>
-        </navigator>
-      </view>
-
+    <view class="content1" wx:for="{{userPart}}" wx:key="{{userPart}}">
+      <navigator url="../user/user?_id={{item._id}}">
+        <text class="textMeth1">姓名：</text>
+        <text class="textMeth2">{{item.name}}</text>
+        <text class="textMeth1">已购买:</text>
+        <text class="textMeth2">{{item.number}}盒\n</text>
+        <text class="textMeth1">症状：</text>
+        <text class="textMeth2">{{item.symptom}}</text>
+      </navigator>
+    </view>
   </view>
-
+  
 </view>

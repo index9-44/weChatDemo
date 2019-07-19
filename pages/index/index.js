@@ -47,6 +47,7 @@ Page({
 
   submitform: function(e) {
     const db = wx.cloud.database()
+    console.log(e)
     console.log(e.detail.value.inputName)
     console.log(e.detail.value.inputNumber)
     console.log(e.detail.value.inputAge)

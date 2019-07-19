@@ -9,9 +9,6 @@
   /* flex-direction: column; */
 }
 
-
-
-
 .root{
   height: 100%;
   display: flex;
@@ -40,11 +37,8 @@ page{
 .inputMeth{
   border: 1px solid #c0c0c0;
   height: 30px;
- 
   background-color: white;
   border-radius: 4px;
- 
- 
   flex: 4;
 }
 
@@ -53,13 +47,9 @@ page{
  
 }
 
-
-
 .inputtMeth{
   height: 30px;
   flex: 6;
- 
-
 }
 
 .buttonMeth{
@@ -76,8 +66,6 @@ page{
   color: grey;
 }
 
-
 .textMeth2{
  margin-right: 40px;
-
 }

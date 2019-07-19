@@ -11,7 +11,7 @@
   "tabBar": {
     "selectedColor": "red",
     "list": [
-      {
+      { 
         "pagePath": "pages/index/index",
         "text": "注册"
       },
